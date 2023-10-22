@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <title>Document</title>
+  </head>
+  <body class="text-primaryFontSize">
+    <header>
+      <nav class="mt-4 flex justify-between items-center md:px-8 px-3">
+        <div><img src="./images/logo copy.svg" alt="logo" /></div>
+        <div>
+          <ul class="hidden md:flex space-x-4">
+            <li><a href="#" class="hover:text-brightRed">Pricing</a></li>
+            <li><a href="#" class="hover:text-brightRed">Product</a></li>
+            <li><a href="#" class="hover:text-brightRed">About us</a></li>
+            <li><a href="#" class="hover:text-brightRed">Career</a></li>
+            <li><a href="#" class="hover:text-brightRed">Community</a></li>
+          </ul>
+        </div>
+        <div>
+          <button
+            class="hidden md:block bg-brightRed text-white rounded-full px-4 py-2 hover:bg-orange-950"
+            id="hamburger"
+          >
+            Get Started
+          </button>
+          <img
+            src="/images/icon-hamburger copy.svg"
+            alt="icon-hamburger"
+            class="block md:hidden"
+          />
+        </div>
+      </nav>
+    </header>
+    <!-- hero section -->
+    <section
+      class="flex flex-col-reverse md:flex-row justify-around items-center mt-8"
+    >
+      <div class="md:w-[40%] md:text-left text-center">
+        <h1 class="md:text-6xl font-bold text-3xl my-7 px-4">
+          bring everyone together to build better Product
+        </h1>
+        <p class="text-gray-600 text-lg mb-4">
+          Manage makes it simple for software teams to plan day-to-day tasks
+          while keeping the larger team goals in view
+        </p>
+        <button class="bg-brightRed text-white rounded-full px-4 py-2 mb-5">
+          Get Started
+        </button>
+      </div>
+      <div>
+        <img
+          src="/images/illustration-intro.svg"
+          alt=""
+          class="md:w-[35rem] w-[20rem]"
+        />
+      </div>
+    </section>
+    <section class="md:flex container mx-auto md:px-4 justify-between">
+      <div class="md:w-[40vw] max-sm:text-center">
+        <h2 class="text-4xl font-bold">What's different about Manage?'</h2>
+        <p>
+          Manage provide all the functionality your team needs, without the
+          complexity. Our software is taylor-made for modern digital product
+          teams.
+        </p>
+      </div>
+      <div class="md:w-[45vw]">
+        <div class="md:flex space-x-4 flex-col">
+          <div
+            class="md:flex md:flex-row rounded-xl flex mx-3 max-md:bg-veryPaleRed my-6"
+          >
+            <h2
+              class="p-1 px-4 bg-brightRed text-white rounded-full font-bold w-fit"
+            >
+              01
+            </h2>
+            <h2 class="font-bold max-sm:text-center mx-4">
+              Tax company-wide progress
+            </h2>
+          </div>
+
+          <p class="text-darkGrayishBlue my-3 md:text-center px-14 text-left">
+            See how your day-to-day tasks is fit into the wider vision. go from
+            tracking progress at the milestone level all the way to the smallest
+            of details. never loose sight of the bigger picture again
+          </p>
+        </div>
+        <div class="md:flex space-x-4 flex-col">
+          <div
+            class="flex md:flex md:flex-row rounded-xl mx-3 max-md:bg-veryPaleRed"
+          >
+            <h2
+              class="p-1 px-4 bg-brightRed text-white rounded-full font-bold w-fit"
+            >
+              02
+            </h2>
+            <h2 class="font-bold max-sm:text-center mx-4">
+              Advanced Built-in report
+            </h2>
+          </div>
+
+          <p class="text-darkGrayishBlue my-3 md:text-center px-14 text-left">
+            Set internal delivery estimate and track progress toward company
+            goals. Our customizable dashboard helps you build out the report you
+            need to keep key stakeholders informed.
+          </p>
+        </div>
+        <div class="md:flex space-x-4 flex-col">
+          <div
+            class="flex md:flex md:flex-row mx-3 rounded-xl max-md:bg-veryPaleRed"
+          >
+            <h2
+              class="p-1 px-4 bg-brightRed text-white rounded-full font-bold w-fit"
+            >
+              03
+            </h2>
+            <h2 class="font-bold max-sm:text-center mx-4">
+              Everything you need in one place
+            </h2>
+          </div>
+
+          <p class="text-darkGrayishBlue my-3 md:text-center px-14 text-left">
+            Stop jumping from one service to another to communicate, store
+            files, track files and share documents. Manage offers an all-in-one
+            team productivity solution.
+          </p>
+        </div>
+      </div>
+    </section>
+    <h2 class="text-3xl font-bold text-center">What they have said</h2>
+    <section
+      class="my-9 relative md:flex md:space-x-4 m-3 justify-center items-center text-center"
+    >
+      <div
+        class="inset-0 flex items-center justify-center my-6 md:w-1/3 h-40 rounded-xl bg-veryLightGray"
+      >
+        <div class="static">
+          <img
+            src="images/avatar-anisha.png"
+            alt=""
+            width="50"
+            height="50"
+            class="rounded-full mx-auto bottom-6 relative"
+          />
+          <div class="relative bottom-6">
+            <h3 class="font-bold">Anisha Li</h3>
+            <p>
+              We have been able to cancel so many other subscriptions since
+              using manage. there is no more cross-channel confusion and
+              everyone is much more focused
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="inset-0 bg-veryLightGray md:flex items-center justify-center hidden md:w-1/3 h-40 rounded-xl"
+      >
+        <div class="static">
+          <img
+            src="images/peter5.jpg"
+            alt=""
+            width="50"
+            height="50"
+            class="rounded-full mx-auto relative bottom-6"
+          />
+          <div class="relative bottom-6">
+            <h3 class="font-bold">Peter Sambo</h3>
+            <p>
+              "Manage has supercharged our teams workflow. The ability to
+              maintain visibility on larger milestones at all times keeps
+              everyone motivated."
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="inset-0 bg-veryLightGray md:flex items-center justify-center md:w-1/3 hidden h-40 rounded-xl"
+      >
+        <div class="static">
+          <img
+            src="images/avatar-richard.png"
+            alt=""
+            width="50"
+            height="50"
+            class="rounded-full mx-auto relative bottom-6"
+          />
+          <div class="relative bottom-6">
+            <h3 class="font-bold">John Snow</h3>
+            <p>
+              "Manage allows us to provide structure and process. it keeps us
+              organized and focused. i can't stop recommending them to everyone
+              i talk to"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="flex justify-center my-10">
+      <button class="bg-brightRed text-white rounded-full px-4 py-2 mb-5">
+        Get Started
+      </button>
+    </div>
+    <section
+      class="bg-brightRed text-white md:flex justify-around md:p-20 max-sm:text-center"
+    >
+      <div class="md:w-[25vw]">
+        <h2 class="text-3xl max-sm:p-10">Simplify how your team works today</h2>
+      </div>
+      <div>
+        <button class="bg-white text-brightRed rounded-full px-4 py-2 mb-5">
+          Get Started
+        </button>
+      </div>
+    </section>
+    <footer
+      class="bg-veryDarkBlue text-white md:flex md:justify-evenly max-sm:flex max-sm:flex-col-reverse"
+    >
+      <div
+        class="md:flex md:flex-col md:py-10 md:gap-12 max-sm:flex max-sm:flex-col"
+      >
+        <div class="flex justify-center">
+          <img src="images/logo.svg" alt="" class="" />
+        </div>
+        <div
+          class="md:flex md:gap-3 max-sm:flex max-sm:justify-around px-5 mt-4 mb-2"
+        >
+          <img src="/images/icon-facebook.svg" alt="" class="" />
+          <img src="/images/icon-twitter.svg" alt="" class="relative" />
+          <img src="/images/icon-instagram.svg" alt="" class="" />
+          <img src="/images/icon-youtube.svg" alt="" class="" />
+          <img src="/images/icon-pinterest.svg" alt="" class="" />
+        </div>
+        <div class="max-sm:text-center md:hidden">
+          <small class="max-sm:text-center text-right">
+            &copy; copyright Peter Sambo 2023 . all rights reserved
+          </small>
+        </div>
+      </div>
+      <div class="md:flex md:py-10 md:gap-20 flex justify-around max-sm:my-5">
+        <div class="">
+          <ul class="">
+            <li class="mb-2 hover:text-brightRed"><a href="#">Home</a></li>
+            <li class="mb-2 hover:text-brightRed"><a href="#">Pricing</a></li>
+            <li class="mb-2 hover:text-brightRed"><a href="#">Product</a></li>
+            <li class="mb-2 hover:text-brightRed"><a href="#">About us</a></li>
+          </ul>
+        </div>
+        <div class="">
+          <ul class="">
+            <li class="mb-2 hover:text-brightRed"><a href="#">Career</a></li>
+            <li class="mb-2 hover:text-brightRed"><a href="#">Community</a></li>
+            <li class="mb-2 hover:text-brightRed">
+              <a href="#">Private Policy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="md:flex md:flex-col md:py-10 md:gap-12 mt-3">
+        <form action="submit" class="md:flex flex justify-center">
+          <div>
+            <input
+              type="email"
+              class="md:py-2 md:px-3 rounded-lg mr-2 p-1 border-none text-black outline-none max-sm:w-[60vw]"
+              placeholder="Updates in your inbox"
+            />
+          </div>
+          <div>
+            <button
+              class="bg-brightRed text-white rounded-lg p-1 md:py-2 md:px-3 max-sm:w-12"
+            >
+              Go
+            </button>
+          </div>
+          <div></div>
+        </form>
+        <div class="max-sm:text-center">
+          <small class="max-sm:text-center text-right max-sm:hidden">
+            &copy; copyright Peter Sambo 2023 . all rights reserved
+          </small>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const hamburger = document.querySelector("#hamburger");
+      hamburger.addEventListener("click", () => {});
+    </script>
+  </body>
+</html>
